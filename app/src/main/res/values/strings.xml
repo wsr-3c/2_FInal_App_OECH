@@ -4,6 +4,9 @@
     <string name="onboaeding1_mainText2">Enjoy quick pick-up and delivery to \n your destination</string>
     <string name="Button_Skip">Skip</string>
     <string name="Button_Next">Next</string>
+    <string name="Button_Sign_up">Sign up</string>
     <string name="Onboarding4_mainText1">Flexible Payment</string>
     <string name="Onboarding4_mainText2">Different modes of payment either \n before and after delivery without \n stress</string>
+    <string name="Onboarding3_mainText1">Real-time Tracking</string>
+    <string name="Onboarding3_mainText2">Track your packages/items from the \n comfort of your home till final destination</string>
 </resources>
