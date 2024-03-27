@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">2_FInal_App_OECH</string>
+    <string name="onboarding1_mainText1">Quick Delivery At Your \n Doorstep</string>
+    <string name="onboaeding1_mainText2">Enjoy quick pick-up and delivery to \n your destination</string>
+    <string name="Button_Skip">Skip</string>
+    <string name="Button_Next">Next</string>
+    <string name="Onboarding4_mainText1">Flexible Payment</string>
+    <string name="Onboarding4_mainText2">Different modes of payment either \n before and after delivery without \n stress</string>
 </resources>

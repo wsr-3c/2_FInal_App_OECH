@@ -7,13 +7,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/onboarding1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="23dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onboarding1" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/Primary_color"
+        android:text="@string/Button_Next"
+        android:textColorLink="@color/Primary_color"
+        app:cornerRadius="4.69dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/Skip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#FDF6FE"
+        android:text="@string/Button_Skip"
+        android:textColor="@color/Primary_color"
+        app:cornerRadius="4.69dp"
+        app:iconTint="@color/Primary_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="342dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="82dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Onboarding1_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="false"
+            android:contentDescription="@string/onboarding1_mainText1"
+            android:gravity="center"
+            android:text="@string/onboarding1_mainText1"
+            android:textAllCaps="false"
+            android:textColor="@color/Primary_color"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/Onboarding1_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/onboaeding1_mainText2"
+            android:gravity="center"
+            android:text="@string/onboaeding1_mainText2"
+            android:textColor="@color/Text_color1"
+            android:textSize="16sp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
