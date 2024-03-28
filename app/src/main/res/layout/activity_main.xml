@@ -43,7 +43,9 @@
         app:cornerRadius="4.69dp"
         app:iconTint="@color/Primary_color"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:strokeColor="@color/Primary_color"
+        app:strokeWidth="1px" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
