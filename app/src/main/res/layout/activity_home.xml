@@ -27,8 +27,11 @@
         android:text="@null"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/panel_home"
+        app:layout_constraintEnd_toStartOf="@+id/Button_wallet"
+        app:layout_constraintHorizontal_bias="0.269"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/panel_home" />
+        app:layout_constraintTop_toTopOf="@+id/panel_home"
+        app:layout_constraintVertical_bias="0.541" />
 
     <Button
         android:id="@+id/Button_wallet"
@@ -39,6 +42,8 @@
         android:text="@null"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/panel_home"
+        app:layout_constraintEnd_toStartOf="@+id/Button_track"
+        app:layout_constraintHorizontal_bias="0.211"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/panel_home"
         app:layout_constraintVertical_bias="0.541" />
@@ -52,6 +57,8 @@
         android:text="@null"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/panel_home"
+        app:layout_constraintEnd_toStartOf="@+id/Button_profile"
+        app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/panel_home"
         app:layout_constraintVertical_bias="0.541" />
@@ -60,13 +67,79 @@
         android:id="@+id/Button_profile"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:layout_marginStart="336dp"
         android:backgroundTint="@color/cardview_shadow_end_color"
         android:text="@null"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/panel_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/panel_home"
         app:layout_constraintVertical_bias="0.541" />
+
+    <ImageView
+        android:id="@+id/element1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/input_text"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/element2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text_image" />
+
+    <ImageView
+        android:id="@+id/element3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profileinfo" />
+
+    <ImageView
+        android:id="@+id/element4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        app:srcCompat="@drawable/cards" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/element2"
+        app:srcCompat="@drawable/ads" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,73 @@
     android:layout_height="match_parent"
     tools:context=".Track">
 
+    <ImageView
+        android:id="@+id/panel_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/track_panel" />
+
+    <Button
+        android:id="@+id/Button_home"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@null"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_track"
+        app:layout_constraintEnd_toStartOf="@+id/Button_wallet"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panel_track"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Button
+        android:id="@+id/Button_wallet"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="124dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@null"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_track"
+        app:layout_constraintEnd_toStartOf="@+id/Button_track"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panel_track"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Button
+        android:id="@+id/Button_track"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="228dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@null"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_track"
+        app:layout_constraintEnd_toStartOf="@+id/Button_profile"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panel_track"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Button
+        android:id="@+id/Button_profile"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@null"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/panel_track"
+        app:layout_constraintEnd_toEndOf="@+id/panel_track"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panel_track"
+        app:layout_constraintVertical_bias="0.541" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
