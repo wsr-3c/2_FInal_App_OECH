@@ -9,4 +9,8 @@
     <string name="Onboarding4_mainText2">Different modes of payment either \n before and after delivery without \n stress</string>
     <string name="Onboarding3_mainText1">Real-time Tracking</string>
     <string name="Onboarding3_mainText2">Track your packages/items from the \n comfort of your home till final destination</string>
+
+
+    // session 5
+    <string name="Search">Search services</string>
 </resources>

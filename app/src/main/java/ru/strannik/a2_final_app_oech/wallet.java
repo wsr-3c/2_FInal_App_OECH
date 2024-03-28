@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class wallet extends AppCompatActivity {
 
-    Button button_home;
+    Button button_home, button_track;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,17 @@ public class wallet extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(wallet.this, home.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        button_track = findViewById(R.id.Button_track);
+
+        button_track.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(wallet.this, Track.class);
                 startActivity(intent);
                 finish();
             }

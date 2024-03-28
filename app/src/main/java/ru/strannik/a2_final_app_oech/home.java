@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class home extends AppCompatActivity {
 
-    Button button_wallet;
+    Button button_wallet, button_track, button_profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,17 @@ public class home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(home.this, wallet.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        button_track = findViewById(R.id.Button_track);
+
+        button_track.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this, Track.class);
                 startActivity(intent);
                 finish();
             }
